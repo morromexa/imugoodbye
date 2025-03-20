@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Yatra+One&family=Zeyada&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    padding:20px 0px;
+}
+
+p {
+    padding-bottom:20px ;
+}
+
+ul{
+    list-style: none;
+}
+
+
+body{
+  font-family: "Quicksand", sans-serif;
+  background-color: #f8f4f0;
+  padding: 0;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.header .imulogo{
+    margin: 0;
+    padding: 10px 30px;
+    width: 130px;
+    
+}
+
+
+header {
+    background-position: center top;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    background-color: #f8f4f0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .navbar ul li {
+
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+
+    font-size: 24 px;
+    padding: 20px;
+    color:#A87661;
+    display: block;
+    
+}
+
+.menu .navbar ul li a:hover {
+
+    color: #E1C3CE;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 60px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#hero{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+#hero .imugl{
+    width: 65%;
+}
+
+.button-1{
+
+    display: inline-block;
+    padding: 5px 60px;
+    background-color: #A87661;
+    color: white;
+    border-radius: 10px;
+}
+
+.button-1:hover{
+
+    background-color: #E1C3CE;
+}
+
+#whatdoeslovemeanstoyou {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url("img/patron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+
+ #whatdoeslovemeanstoyou .texto{
+
+    background-color: #f8f4f0;
+    padding: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+   
+ }
+
+
+
+#about-me{
+   background-color: #A87661;
+}
+
+
+#about-me .container{
+
+    text-align: center;
+    padding: 200px 12px;
+
+}
+button{
+
+    font-size: 1 em;
+    font-weight: 300;
+    padding: 5px 60px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #A87661;
+}
+
+button:hover{
+
+background-color: #E1C3CE;
+
+}
+
+@media(max-width:991px){
+ header{
+    position: fixed;
+    width: 100%;
+}
+
+    
+.menu{
+    padding: 20px;
+}
+
+.menu label {
+    display: initial;
+}
+
+.menu .navbar {
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+background-color: #f8f4f0;
+display: none
+}
+
+.menu .navbar ul li{
+    width: 100%;
+}
+
+#menu:checked ~ .navbar {
+    display: initial;
+}
+
+}
+
+@media (min-width:720px){
+
+
+
+
+    #about-me .container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #about-me .img-container{
+
+        margin: 30px;
+        background-image: url("img/IMG_1179_jpg.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 50%;
+
+    
+    }
+
+    #about-me .texto{
+
+        width: 50%;
+        text-align: initial;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+
+}
