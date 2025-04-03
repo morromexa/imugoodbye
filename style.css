@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Yatra+One&family=Zeyada&display=swap');
 
+
 *{
     box-sizing: border-box;
     text-decoration: none;
     margin: 0;
+    
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+
 h1{
     padding:20px 0px;
+    
 }
 
 p {
     padding-bottom:20px ;
+    text-align: justify;
+    font-size: 14px;
 }
 
 ul{
@@ -68,7 +74,7 @@ header {
 
 .menu .navbar ul li a {
 
-    font-size: 24 px;
+    font-size: 16px;
     padding: 20px;
     color:#A87661;
     display: block;
@@ -114,6 +120,7 @@ header {
     background-color: #A87661;
     color: white;
     border-radius: 10px;
+    margin: 5px;
 }
 
 .button-1:hover{
@@ -153,6 +160,10 @@ header {
    
  }
 
+ #whatdoeslovemeanstoyou .titulo1{
+    color:#A87661;
+    font-size: 24px;
+ }
 
 
 #about-me{
@@ -161,37 +172,100 @@ header {
 
 
 #about-me .container{
-
-    text-align: center;
-    padding: 200px 12px;
-
+    color: #f8f4f0;
+    text-align: justify;
+    padding: 200px 12px
 }
-button{
 
-    font-size: 1 em;
-    font-weight: 300;
-    padding: 5px 60px;
+#about-me .texto{
+    margin: 20px 20px;
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.carousel-container {
+    width: 98%;
+    max-width: 800px; /* Puedes aumentar esto según necesites */
+    height: 500px; /* Ajusta según el tamaño de tus imágenes */
+    overflow: hidden;
     border-radius: 10px;
-    border: none;
-    color: white;
-    background-color: #A87661;
-}
-
-button:hover{
-
-background-color: #E1C3CE;
+    box-shadow: 0px 4px 8px rgba(246, 153, 251, 0.2);
+    position: relative;
+    z-index: 1; /* Se mantiene debajo de la navbar */
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
 
 }
+
+.carousel-slide {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+}
+
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;  /* Mantiene la proporción original */
+    object-fit: contain;  /* Ajusta la imagen sin recortarla */
+    
+}
+
+#contact .info {
+    margin-bottom: 40px;
+    font-size: 16px;
+    padding: 20px;
+
+}
+
+
+footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+footer .marca {
+    color: #dca0b6;
+    margin-top: 10px ;
+    margin-right: 10px;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
 
 @media(max-width:991px){
- header{
+
+
+.header{
     position: fixed;
     width: 100%;
+    z-index: 10000;
 }
 
-    
 .menu{
+    position: absolute; /* Solo en móviles, mantiene la navbar fija */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que la navbar esté siempre adelante */
     padding: 20px;
+    
 }
 
 .menu label {
@@ -200,6 +274,7 @@ background-color: #E1C3CE;
 
 .menu .navbar {
 position: absolute;
+z-index: 10000; /* Mayor que el carrusel */
 top: 100%;
 left: 0;
 right: 0;
@@ -215,7 +290,11 @@ display: none
     display: initial;
 }
 
+.carousel {
+    margin: 0px;
 }
+}
+
 
 @media (min-width:720px){
 
@@ -249,8 +328,6 @@ display: none
         flex-direction: column;
         justify-content: center;
     }
-
-
 
 
 }
