@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>imissugoodbye.</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/iconheart.png" />
 </head>
+
 <body>
     <header class="header">
         <div class="menu container">
@@ -18,8 +20,8 @@
             <nav class="navbar">
                 <ul>
                     <li> <a href="#whatdoeslovemeanstoyou">what does love mean to you?</a></li>
-                    <li><a href="#about-me">about me.</a></li>
-                    <li><a href="#">contact.</a></li>
+                    <li><a href="#about-me">who am i?</a></li>
+                    <li><a href="#contact">contact.</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +30,7 @@
     <section id="hero">
        
        <img src="img/imissu,goodbyelogo.png" class="imugl" alt="imuglogo">
-       <a href="#" class="button-1">find out.</a>
+       <a href="https://drive.google.com/uc?id=1hZxFF4TaQlj25GOSyzBnRdziG5UfkH8K&export=download" class="button-1">find out.</a>
 
     </section>
     
@@ -37,15 +39,44 @@
         <div class="container">
           <nav>
             <nav class="texto">
-              <h1>what does love mean to you?</h1>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At eveniet iusto deleniti architecto rerum itaque consequuntur ducimus suscipit, officiis, deserunt molestias consequatur voluptatum. Debitis, beatae laudantium magnam vero modi animi.</p>
-              <button>find out.</button>
+              <h1 class="titulo1">what does love mean to you?</h1>
+              <p> “i miss u, goodbye” is more than a book or a magazine—it’s a visual and emotional experience that celebrates the beauty of the unfinished and the imperfect. It’s a collection of songs and poems that were never completed, 
+                captured directly from my notes app in their rawest and most honest form. <br>
+                <br>This project merges my two passions: art and design. On the one hand, it captures these unfinished songs’ intimate and spontaneous nature, embodying brief bursts of creativity.
+                Conversely, design takes the forefront through a thoughtfully developed visual identity, branding, illustrations, and web design. <br>
+                <br>“i miss u, goodbye” transcends being merely a book or magazine; it offers a visual and emotional journey that honors the charm of the unfinished and the imperfect.</p>
+              <a href="https://drive.google.com/uc?id=1hZxFF4TaQlj25GOSyzBnRdziG5UfkH8K&export=download" class="button-1">download.</a>
             </nav>
-            
           </nav>
+          
         </div>
         
     </section>
+
+    <section class="carousel">
+      <div class="carousel-container">
+          <div class="carousel-slide">
+              <img src="img/Artboard 1-100.jpg" alt="Imagen 1">
+              <img src="img/Artboard 2-100.jpg" alt="Imagen 2">
+              <img src="img/Artboard 3-100.jpg" alt="Imagen 3">
+              <img src="img/Artboard 4-100.jpg" alt="Imagen 4">
+              <img src="img/Artboard 5-100.jpg" alt="Imagen 5">
+              <img src="img/Artboard 6-100.jpg" alt="Imagen 6">
+          </div>
+      </div>
+
+      <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".carousel-slide img");
+    
+        function showNextSlide() {
+            index = (index + 1) % slides.length;
+            document.querySelector(".carousel-slide").style.transform = `translateX(-${index * 100}%)`;
+        }
+    
+        setInterval(showNextSlide, 4000); // Cambia la imagen cada 4 segundos
+    </script>
+  </section>
 
     <section id="about-me">
             
@@ -53,22 +84,34 @@
             <div class="img-container"></div>
             <div class="texto">
 
-                <h1>about me.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+                <h1>who am i?</h1>
+                <p>My name is Nico de Vega, and I am an artist, writer, and designer based in Mexico. 
+                  My work integrates visual creativity with written expression, delving into emotions and ideas across various disciplines. 
+                  I have a strong passion for songwriting, writing, and design, viewing each project as a chance to narrate stories in a genuine and powerful manner. <br>
+
+                  <br>As a multidisciplinary designer, I focus on branding, visual identity, web design, and illustration. 
+                  I enjoy crafting visual experiences that embody identity and significance,
+                  merging artistic sensitivity with strategic planning to bring projects to fruition in both conceptual and aesthetic dimensions.</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
+    <section id="contact">
+        <div class="info container">
+          <h1>contact.</h1>
             <ul>
-                <li><a href="#">instagram.</a></li>
-                <li><a href="#">linkedin.</a></li>
+              <li>email: efrain.vr720@gmail.com</li>
+              <li><a href="https://www.instagram.com/mexa.boi7?igsh=MWFkeWU4Mjh5NnZ4ag%3D%3D&utm_source=qr" target="_blank">instagram.</a></li>
+              <li><a href="https://www.linkedin.com/in/efrain-vega-b6773934b/" target="_blank">linkedin.</a></li>
             </ul>
-
-
         </div>
     </section>
+
+    <footer>
+      <div class="marca">
+        <p>&copy;mexaboi2025.</p>
+      </div>
+    </footer>
 
     
 </body>
