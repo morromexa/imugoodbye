@@ -228,13 +228,14 @@ header {
 
 
 footer {
+    background-color: #A87661; 
     padding-top: 10px;
     display: flex;
     justify-content:flex-end;
 }
 
 footer .marca {
-    color: #dca0b6;
+    color: #f8f4f0;
     margin-top: 10px ;
     margin-right: 10px;
 }
